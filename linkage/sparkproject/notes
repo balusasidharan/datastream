@@ -1,0 +1,12 @@
+/opt/homebrew/Cellar/apache-spark/3.4.1/libexec/sbin/start-master.sh
+/opt/homebrew/Cellar/apache-spark/3.4.1/libexec/sbin/start-worker.sh <<your spark master node location>>
+you can have spark run on a local cluster or hadoop cluster
+pyspark is the wrapper for running python code.
+Spark is mainly used for data analysis.
+
+Run this program after starting ./spark-master
+then submit job as
+spark-submit --class SimpleApp  --master <<yourspark-location> sparkproject/target/scala-2.12/simple-project_2.12-1.0.jar
+
+RDD -
+
